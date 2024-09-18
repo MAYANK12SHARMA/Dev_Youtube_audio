@@ -151,4 +151,4 @@ with gr.Blocks(css=css) as app:
 
 # Launch the Gradio app
 if __name__ == "__main__":
-    app.launch(server_port=8000)
+    app.launch(server_port=8000, server_name="0.0.0.0")
