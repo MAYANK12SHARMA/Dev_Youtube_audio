@@ -127,7 +127,7 @@ default_image = "image.png"
 default_text = "Please enter a YouTube link to get started!"
 
 # Build the Gradio interface
-with gr.Blocks(css=css) as iface:
+with gr.Blocks(css=css) as app:
     gr.Markdown("# 🎵 YouTube to MP3 Converter with Thumbnail")
     gr.Markdown("**Enter a YouTube video link below, and you'll receive the MP3 audio with the video thumbnail for download!**")
     with gr.Row():
@@ -151,4 +151,4 @@ with gr.Blocks(css=css) as iface:
 
 # Launch the Gradio app
 if __name__ == "__main__":
-    iface.launch()
+    app.launch(server_port=8000)
